@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Lau Khar Jiun Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/c456cbbb35.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,17 +54,18 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>2022 - Present</span><br>Project Engineer at DAB Technology</li>
-              <li><span>2018 - 2022</span><br>Project Coordinator at Archi Metal Sdn Bhd</li>
-              <li><span>2018</span><br>Engineering intern at SAE Engineering</li>
+              <li><span>Jun 2022 - Present</span><br>Project Engineer at DAB Technology</li>
+              <li><span>Apr 2018 - June 2022</span><br>Project Coordinator at Archi Metal Sdn Bhd</li>
+              <li><span>Jan 2018 - Apr 2018</span><br>Engineering Trainee at SAE Engineering</li>
+              <li><span>Jul 2014 - Jul 2015</span><br>Intern at TransAsia Airways</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>2025</span><br>Tech With Nana - Online Part Time Complete DevOps Engineer Programme</li>
-              <li><span>2024</span><br>Sigma School - Online Part Time Complete Software Developer Programme</li>
-              <li><span>2015 - 2017</span><br>EASA Part 147 B1.1 Aircraft Maintenance Basic Training Programme at Xiamen, China</li>
-              <li><span>2011 - 2015</span><br>Aircraft Mechanical Engineering Bachelor Degree at Taiwan</li>
+              <li><span>Oct 2024 - Mar 2025</span><br>Techworld With Nana - Online Part Time Complete DevOps Engineer Programme</li>
+              <li><span>Jun 2024 - Mar 2025</span><br>Sigma School - Online Part Time Complete Software Developer Programme</li>
+              <li><span>2015 - 2017</span><br>EASA Part 147 B1.1 Aircraft Maintenance Basic Training Programme in Xiamen, China</li>
+              <li><span>2011 - 2015</span><br>Bachelor Degree of Aircraft Mechanical Engineering in Taiwan, R.O.C.</li>
             </ul>
           </div>
         </div>
@@ -71,7 +73,44 @@
     </div>
   </div>
 
+  <!--* -----------services------------->
 
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-codepen"></i>
+          <h2>DevOps</h2>
+          <p>CI/CD</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>Front End</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-figma"></i>
+          <h2>Web Design</h2>
+          <p>Front End</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--* -----------portfolio------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+  </div>
+</div>
+  
+
+
+  
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
@@ -83,6 +122,8 @@
     for(tabcontent of tabcontents) {
       tabcontent.classList.remove("active-tab");
     }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
   }
 </script>
 </body>
