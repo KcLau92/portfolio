@@ -4,14 +4,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Portifolio</title>
+  <title>Lau Khar Jiun Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello, my name is Kc.
-  <script src="script.js"></script>
+  <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>DevOps Engineer</p>
+          <h1>Hi, I'm <span>Travis Lau</span><br>from Malaysia</h1>
+        </div>
+      </div>
+  </div>
+</div>
+<!--* -----------about------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="LKJ.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm Lau Khar Jiun</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Full Stack</li>
+              <li><span>UI/UX</span><br>Designing Web interfaces</li>
+              <li><span>DevOps</span><br>CI/CD</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Present</span><br>Project Engineer at DAB Technology</li>
+              <li><span>2018 - 2022</span><br>Project Coordinator at Archi Metal Sdn Bhd</li>
+              <li><span>2018</span><br>Engineering intern at SAE Engineering</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2025</span><br>Tech With Nana - Online Part Time Complete DevOps Engineer Programme</li>
+              <li><span>2024</span><br>Sigma School - Online Part Time Complete Software Developer Programme</li>
+              <li><span>2015 - 2017</span><br>EASA Part 147 B1.1 Aircraft Maintenance Basic Training Programme at Xiamen, China</li>
+              <li><span>2011 - 2015</span><br>Aircraft Mechanical Engineering Bachelor Degree at Taiwan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname) {
+    for(tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+  }
+</script>
 </body>
 
 </html>
-
