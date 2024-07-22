@@ -11,29 +11,29 @@
 
 <body>
   <div id="header">
-      <div class="container">
-        <nav>
-          <img src="logo.png" class="logo">
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>DevOps Engineer</p>
-          <h1>Hi, I'm <span>Lau</span><br>from Malaysia</h1>
-        </div>
+    <div class="container">
+      <nav>
+        <img src="logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>DevOps Engineer</p>
+        <h1>Hi, I'm <span>Lau</span><br>from Malaysia</h1>
       </div>
+    </div>
   </div>
-</div>
-  
-<!--* -----------about------------->
-  
+  </div>
+
+  <!--* -----------about------------->
+
   <div id="about">
     <div class="container">
       <div class="row">
@@ -66,9 +66,12 @@
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>Oct 2024 - Mar 2025</span><br>Techworld With Nana - Online Part Time Complete DevOps Engineer Programme</li>
-              <li><span>Jun 2024 - Mar 2025</span><br>Sigma School - Online Part Time Complete Software Developer Programme</li>
-              <li><span>2015 - 2017</span><br>EASA Part 147 B1.1 Aircraft Maintenance Basic Training Programme in Xiamen, China</li>
+              <li><span>Oct 2024 - Mar 2025</span><br>Techworld With Nana - Online Part Time Complete DevOps Engineer
+                Programme</li>
+              <li><span>Jun 2024 - Mar 2025</span><br>Sigma School - Online Part Time Complete Software Developer
+                Programme</li>
+              <li><span>2015 - 2017</span><br>EASA Part 147 B1.1 Aircraft Maintenance Basic Training Programme in
+                Xiamen, China</li>
               <li><span>2011 - 2015</span><br>Bachelor Degree of Aircraft Mechanical Engineering in Taiwan, R.O.C.</li>
             </ul>
           </div>
@@ -105,42 +108,42 @@
     </div>
   </div>
 
-   <!--* -----------portfolio------------->
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="work1.png" width="500px" height="370px">
-        <div class="layer">
-          <h3>DevOps</h3>
-          <p>Some projects</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+  <!--* -----------portfolio------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work1.png" width="500px" height="370px">
+          <div class="layer">
+            <h3>DevOps</h3>
+            <p>Some projects</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work2.png" width="500px" height="370px">
+          <div class="layer">
+            <h3>Web Application</h3>
+            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work3.png" width="500px" height="370px">
+          <div class="layer">
+            <h3>Side Projects</h3>
+            <p>Sigma School online coding learning platform</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
         </div>
       </div>
-      <div class="work">
-        <img src="work2.png" width="500px" height="370px">
-        <div class="layer">
-          <h3>Web Application</h3>
-          <p>The app connects you to the talented people around the world. Download it from play store.</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="work3.png" width="500px" height="370px">
-        <div class="layer">
-          <h3>Side Projects</h3>
-          <p>Sigma School online coding learning platform</p>
-          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-        </div>
-      </div>
+      <a href="#" class="btn">See more</a>
     </div>
-    <a href="#" class="btn">See more</a>
   </div>
-</div>
-  
 
-   <!--* -----------contact------------->
+
+  <!--* -----------contact------------->
   <div id="contact">
     <div class="container">
       <div class="row">
@@ -155,12 +158,13 @@
           <a href="Draft CV.pdf" download class="btn btn2">Download CV</a>
         </div>
         <div class="contact-right">
-          <form>
+          <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="Email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
@@ -170,37 +174,54 @@
   </div>
 
 
-  
-  
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-  
-  function opentab(tabname) {
-    for(tablink of tablinks) {
-      tablink.classList.remove("active-link");
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
-    for(tabcontent of tabcontents) {
-      tabcontent.classList.remove("active-tab");
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
     }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
-</script>
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
 
-<script>
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK_yRJKcN5U4NyIwyWYHAxDj5wi8cUeAWwFwD25vSuKemnT3a0Y4cN29O4rLet5VEv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
 
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px";
-  }
-  
-</script>
-  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>

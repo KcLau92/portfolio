@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -439,11 +439,18 @@ nav .fas {
     margin-right: 20px;
   }
 
-  .contact-left, .contact-right{
+  .contact-left,
+  .contact-right {
     flex-basis: 100%;
   }
 
-  .copyright{
+  .copyright {
     font-size: 14px;
   }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
